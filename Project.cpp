@@ -19,7 +19,7 @@ bool login()
 
         if (admin == admin_verified && password == password_verified)
         {
-            system("clear");
+            system("clear"); //"cls" if using Windows. "clear" is used with Linux/MacOS.
             cout << "Welcome to the administration portal.\n";
             return true;
         }
