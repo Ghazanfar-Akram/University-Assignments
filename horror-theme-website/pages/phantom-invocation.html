@@ -11,7 +11,7 @@
     <h1 class="welcoming-line">Phantom Invocation</h1>
 
     <h3>Are you brave enough to attend the call by us?</h3>
-    <form action="#" method="post">
+    <form id="contactForm" action="#" method="post">
         <label for="name">Your Name:</label>
         <input type="text" id="name" name="name" required><br><br>
         
@@ -26,6 +26,13 @@
         <nav><a href="cursed-screens.html"><h1>Cursed Screens</h1></a></nav>
         <nav><a href="origins.html"><h1>Origins</h1></a></nav>
     </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            window.location.href = 'death-attemp.html'; 
+        });
+    </script>
 
 </body>
 </html>
