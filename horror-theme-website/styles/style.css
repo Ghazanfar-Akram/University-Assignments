@@ -1,0 +1,110 @@
+body {
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    animation: fadeInSlow 2s ease-in-out;
+}
+
+.fullscreen-gif {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0;
+    animation: fadeInSlow 2s ease-in-out forwards;
+}
+
+.cursed-screens::before, 
+.phantoms-invocation::before, 
+.origins::before,
+.death-attempt::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://legendary-digital-network-assets.s3.amazonaws.com/wp-content/uploads/2018/06/14042917/The-Nun.jpg') 
+                no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0;
+    animation: fadeInBackground 2s ease-in-out forwards;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeInText 2s ease-in-out forwards 2s;
+}
+
+h1, h2 {
+    opacity: 0;
+    animation: fadeInText 2s ease-in-out forwards 2.5s;
+}
+
+h3, p, a, button, input, form, .nav-container, .origins-content, .cursed-screens-content, .death-attempt-content {
+    opacity: 0;
+    animation: fadeInText 2s ease-in-out forwards 3s;
+}
+
+h3 {
+    opacity: 0;
+    animation: fadeInText 2s ease-in-out forwards 2.5s;
+    margin: 5px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+
+nav {
+    padding: 10px 15px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+nav:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+@keyframes fadeInSlow {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInText {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInBackground {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
