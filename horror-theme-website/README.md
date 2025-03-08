@@ -1,0 +1,1 @@
+Horror Theme Website is an immersive movie browsing experience designed to match the genre’s feel. It enhances the spooky vibe with eerie visuals, and the same approach can be applied to other genres like action, sci-fi, or fantasy for a fully themed experience.
